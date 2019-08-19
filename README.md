@@ -6,7 +6,7 @@
 https://www.ibm.com/developerworks/cn/web/1012_moying_ckeditor/index.html
 
 # CKeditor4.5.0 使用步骤
-1、下载
-2、解压，选择所需
-3、引入 ckeditor.js
-4、配置config.js
+- 1、下载
+- 2、解压，选择所需
+- 3、引入 ckeditor.js
+- 4、配置config.js
