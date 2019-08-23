@@ -32,10 +32,12 @@ CKEDITOR.editorConfig = function( config ) {
     config.contentsCss = './ckeditor/contents.css';//所需要添加的CSS文件 在此添加 可使用相对路径和网站的绝对路径
     
     /* 与文件相关的设置 filebrowserXXX*/
-    config.filebrowserImageUploadUrl = 'http://192.168.1.108:20219/uploadImage';//图片上传路径。图像filebrowser默认无上传tab
+    config.filebrowserImageUploadUrl = 'http://localhost:20219/uploadFile';//图片上传路径。图像filebrowser默认无上传tab
 //  config.image_previewText = '外联图片请直接输入图片地址。';//这里的内容自己可以定义。同样可以设置""空
 //	config.image_previewText = CKEDITOR.tools.repeat( '图片预览 <br/>外联图片请直接输入图片地址。', 1 );//图像filebrowser的图片预览部分
 //	config.removeDialogTabs = 'image:advanced;image:Link';
+
+    config.filebrowserFlashUploadUrl = 'http://localhost:20219/uploadFile';//图片上传路径。Flash的filebrowser默认无上传tab
 
 	config.format_div = { element: 'div', attributes: { 'class': 'normalDiv' } };//格式化
 	

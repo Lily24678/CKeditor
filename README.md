@@ -10,3 +10,10 @@ https://www.ibm.com/developerworks/cn/web/1012_moying_ckeditor/index.html
 - 2、解压，选择所需
 - 3、引入 ckeditor.js
 - 4、配置config.js
+
+
+# CKeditor4.5.0 注意
+## 一、flash 上传预览 实现
+- 1、找到ckeditor的目录文件
+- 2、打开/ckeditor/ckeditor.js 文件，查找 ：application/x-shockwave-flash，找到之后直接删除
+- 3、打开/ckeditor/plugins/flash/dialogs/flash.js 文件，查找application/x-shockwave-flash，找到之后直接删除（这里有两处）

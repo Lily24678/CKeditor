@@ -40,19 +40,26 @@ $(function(){
 		var fileName =  evt.data.fileLoader.fileName;
 		var lastIndex=fileName.lastIndexOf('.');
 		if(lastIndex==-1){
-			alert("文本件类型不正确，请上传.jpg等图片格式的文件");
+			alert("文本件类型不正确,无法上传");
 			return false;
 		}
-		var fileSuffix=fileName.substr(fileName.lastIndexOf('.'));
-		if(!/.(gif|jpg|jpeg|png|gif|jpg|png)$/.test(fileSuffix)){
-			alert("文本件类型不正确，请上传.jpg格式");
-			return false;			
-		}
+//		var fileSuffix=fileName.substr(fileName.lastIndexOf('.'));
+//		if(!/.(gif|jpg|jpeg|png|gif|jpg|png)$/.test(fileSuffix)){
+//			alert("文本件类型不正确，请上传.jpg格式");
+//			return false;			
+//		}
 		return true;
 		
 	});
 	editor.on('fileUploadResponse',function(evt){
+		debugger;
+		console.log("filebrowser---文件上传的响应");
+		return true;
 		
+	});
+
+	editor.on('uploaded',function(evt){
+		debugger;
 		console.log("filebrowser---文件上传的响应");
 		return true;
 		
